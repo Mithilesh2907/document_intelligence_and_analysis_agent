@@ -1,0 +1,254 @@
+# =====================================================
+# PYTHON
+# =====================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+downloads/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# =====================================================
+# VIRTUAL ENVIRONMENTS
+# =====================================================
+.venv/
+venv/
+env/
+ENV/
+
+# =====================================================
+# ENVIRONMENT VARIABLES & SECRETS
+# =====================================================
+.env
+.env.*
+*.env
+
+# API Keys
+secrets/
+credentials/
+service_account.json
+google_credentials.json
+
+# =====================================================
+# JUPYTER
+# =====================================================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# =====================================================
+# IDEs
+# =====================================================
+.vscode/
+.idea/
+*.iml
+
+# =====================================================
+# OS FILES
+# =====================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =====================================================
+# LOGS
+# =====================================================
+logs/
+*.log
+log.txt
+
+# =====================================================
+# TESTS / COVERAGE
+# =====================================================
+.coverage
+.pytest_cache/
+htmlcov/
+.tox/
+.nox/
+.cache/
+
+# =====================================================
+# MYPY / LINTING
+# =====================================================
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.dmypy.json
+
+# =====================================================
+# VECTOR DATABASES
+# =====================================================
+
+# ChromaDB
+chroma/
+chroma_db/
+chroma_storage/
+
+# FAISS
+*.faiss
+faiss_index/
+index.faiss
+
+# LanceDB
+.lancedb/
+lancedb/
+
+# Milvus local data
+milvus/
+
+# Weaviate local data
+weaviate_data/
+
+# Qdrant local data
+qdrant_storage/
+
+# Pinecone exports
+pinecone_data/
+
+# =====================================================
+# EMBEDDINGS & INDEXES
+# =====================================================
+embeddings/
+vector_store/
+vectorstores/
+indexes/
+index/
+retrieval_cache/
+
+# =====================================================
+# RAG DOCUMENT STORAGE
+# =====================================================
+data/raw/
+data/processed/
+data/chunks/
+
+uploads/
+documents/
+pdfs/
+corpus/
+
+# Uncomment if documents are large and reproducible
+# data/
+
+# =====================================================
+# GENERATED FILES
+# =====================================================
+outputs/
+generated/
+results/
+cache/
+
+# =====================================================
+# LANGCHAIN / LANGGRAPH
+# =====================================================
+.langchain.db
+langchain.db
+
+# LangSmith traces
+.langsmith/
+
+# LangGraph checkpoints
+checkpoints/
+graph_checkpoints/
+
+# =====================================================
+# LLM CACHES
+# =====================================================
+.llm_cache/
+llm_cache/
+
+# =====================================================
+# MODEL FILES
+# =====================================================
+models/
+checkpoints/
+weights/
+
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+*.onnx
+
+# Hugging Face
+.huggingface/
+hf_cache/
+
+# =====================================================
+# STREAMLIT
+# =====================================================
+.streamlit/secrets.toml
+
+# =====================================================
+# DATABASES
+# =====================================================
+*.db
+*.sqlite
+*.sqlite3
+
+# =====================================================
+# DOCKER
+# =====================================================
+docker-compose.override.yml
+
+# =====================================================
+# TEMP FILES
+# =====================================================
+tmp/
+temp/
+*.tmp
+
+# =====================================================
+# MAC / LINUX SWAP FILES
+# =====================================================
+*.swp
+*.swo
+*~
+
+# =====================================================
+# PACKAGE MANAGERS
+# =====================================================
+node_modules/
+
+# =====================================================
+# AI PROJECT SPECIFIC
+# =====================================================
+rag_cache/
+embedding_cache/
+token_cache/
+query_cache/
+semantic_cache/
+
+# OpenAI / Anthropic response dumps
+responses/
+traces/
+
+# Local experiment files
+experiments/
+runs/
+
+# =====================================================
+# PROJECT CONFIG
+# =====================================================
+*.local
+.local/
+
+# =====================================================
+# ARTIFACTS
+# =====================================================
+artifacts/
+mlruns/
+wandb/
+tensorboard_logs/
