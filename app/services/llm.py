@@ -16,8 +16,6 @@ Keep answers beginner-friendly.
 
 def ask_gemini(question: str) :
     prompt = f"""
-    {SYSTEM_PROMPT}
-    
     Question:
     {question}
     """
