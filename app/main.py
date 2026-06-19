@@ -3,6 +3,7 @@ from services.document_loader import load_document
 from services.search import search
 from services.chunking import chunk_text
 from services.vector_store import InMemoryVectorStore
+from services.RAG_pipeline import answer_question
 
 def main() :
     path = input("Document path: ")
@@ -18,14 +19,19 @@ def main() :
         if query.lower() == "exit" :
             return
         
-        results = search(query, store)
+        answer = answer_question(query, store)
         
-        print("Top relevant matches : ")
+        print("\nAnswer : ")
+        print(answer)
         
-        for chunk, score in results :
-            print(f"""Score: {score:.3f}""")
-            print(chunk)
-            print("-" * 50)
+        # results = search(query, store)
+        
+        # print("Top relevant matches : ")
+        
+        # for chunk, score in results :
+        #     print(f"""Score: {score:.3f}""")
+        #     print(chunk)
+        #     print("-" * 50)
             
 if __name__ == "__main__" :
     main()
@@ -63,5 +69,5 @@ if __name__ == "__main__" :
 #     #     print()
 
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
